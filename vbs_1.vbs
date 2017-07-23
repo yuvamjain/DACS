@@ -8,25 +8,6 @@
 '----------------------------------------------------------------------------------------------------------------------------
 Option Explicit
 Const ForReading   = 1
-Const ForWriting   = 2
-Const ForAppending = 8
-Dim objDictionary, objFSO, wshShell, wshNetwork
-Dim scriptBaseName, scriptPath, scriptLogPath
-Dim ipAddress, macAddress, item, messageType, message
-On Error Resume Next
-   Set objDictionary = NewDictionary
-   Set objFSO        = CreateObject("Scripting.FileSystemObject")
-   Set wshShell      = CreateObject("Wscript.Shell")
-   Set wshNetwork    = CreateObject("Wscript.Network")
-   scriptBaseName    = objFSO.GetBaseName(Wscript.ScriptFullName)
-   scriptPath        = objFSO.GetFile(Wscript.ScriptFullName).ParentFolder.Path
-   scriptLogPath     = scriptPath & "\" & IsoDateString(Now)
-   If Err.Number <> 0 Then
-      Wscript.Quit
-   End If
-On Error Goto 0
-'----------------------------------------------------------------------------------------------------------------------------
-'Main Processing Section
 '----------------------------------------------------------------------------------------------------------------------------
 On Error Resume Next
    PromptScriptStart
