@@ -40,7 +40,7 @@ Navigate your code with ease. Click on function and method calls to jump to thei
  * @author Ian Kaplan, www.bearcave.com, iank@bearcave.com
  */
 package io.kunalk.springaws.dynamoDBweb.service;
-package com.klera.com.gso;
+package com.klera.gso;
 
 import com.amazonaws.ClientConfiguration;
 import com.amazonaws.Protocol;
