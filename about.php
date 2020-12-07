@@ -10,7 +10,7 @@
   <meta http-equiv="refresh" content="200" >
  <link rel="shortcut icon" href="./files/favicon1.ico" />
 </head>
-
+<Testing keyword Klera.gso.com>
 <body background="./files/bg1.jpg">
   <div id="main">
     <div id="header">
